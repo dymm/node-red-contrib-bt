@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('bluetooth-node-in', {
+        category: 'bluetooth',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:"bluetooth in"}
+        },
+        inputs:3,
+        outputs:3,
+		inputLabels:["address", "scan", "write"],
+		outputLabels:["connected", "data", "found"],
+        icon: "serial.png",
+		align: "center",
+        label: function() {
+            return this.name||"bluetooth-node-in";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="bluetooth-node-in">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="bluetooth-node-in">
+    <p>A bluetooth node that allow reading datas</p>
+</script>

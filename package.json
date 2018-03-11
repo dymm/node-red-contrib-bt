@@ -1,0 +1,23 @@
+{
+  "name": "node-red-contrib-bt",
+  "version": "0.1.0",
+  "description": "",
+  "main": "bluetooth-node-in.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dymm/node-red-contrib-bt.git"
+  },
+  "author": "dymm",
+  "license": "MIT",
+  "dependencies": {
+    "bluez": "^0.1.0"
+  },
+  "node-red": {
+    "nodes": {
+      "bluetooth-node-in": "bluetooth-node-in.js"
+    }
+  }
+}
